@@ -9,23 +9,30 @@ class Grammar:
         self.S = s
 
         # Check if the NFA needs to be converted to DFA
-        if not self.check_nfa(self.P):
-            self.P = self.nfa_to_dfa()  # Update self.P with the DFA
+        if self.check_nfa(self.P):
+            print("NFA")
+            self.P = self.nfa_to_dfa()
+        else:
+            print("DFA")
+    # Check if the grammer is NFA
 
-    @staticmethod
-    def check_nfa(input_dict):
-        check = True
+    def check_nfa(self,input_dict):
+        check = False
         for _, strings in input_dict.items():
             first_letters = [string[0] for string in strings if string]
             if len(set(first_letters)) < len(first_letters):
-                check = False
+                check = True
                 break
         return check
 
+    #Transfomt NFA to DFA
     def nfa_to_dfa(self):
         keys = self.P.keys()
         table1 = {}
 
+        #from {'S': {'a': ['A', 'B'], 'b': []}, 'A': {'a': [], 'b': ['S']}, 'B': {'a': ['C'], 'b': []}, 'C': {'a': ['X'], 'b': ['S']}} to
+        #{'S': {'a': ['AB'], 'b': ['']}, 'A': {'a': [''], 'b': ['S']}, 'B': {'a': ['C'], 'b': ['']}, 'C': {'a': ['X'], 'b': ['S']}}
+        #if there are 2 element in list like ['A','B'] tranform it in ['AB']
         def transform_dict(input_dict):
             for key in list(input_dict.keys()):
                 for terminal in list(input_dict[key].keys()):
@@ -35,6 +42,7 @@ class Grammar:
                             temp[0] += symbol
                     input_dict[key][terminal] = temp
             return input_dict
+        #print the table
 
         def table_print(data):
             table = PrettyTable()
@@ -45,6 +53,8 @@ class Grammar:
                 table.add_row(row)
             print(table)
 
+        # from {'S': {'a': ['AB'], 'b': ['']}, 'A': {'a': [''], 'b': ['S']}, 'B': {'a': ['C'], 'b': ['']}, 'C': {'a': ['X'], 'b': ['S']}}
+        # {'S': ['aAB'], 'AB': ['aC', 'bS'], 'C': ['a', 'bS'], 'X': []}
         def dict_to_grammar(input_dict):
             grammar = {}
             for key in list(input_dict.keys()):
@@ -58,14 +68,21 @@ class Grammar:
                 for i in range(0, len(grammar[key])):
                     if grammar[key][i][1] == 'X':
                         grammar[key][i] = grammar[key][i][:-1]
+            print(grammar)
             for key in list(grammar.keys()):
                 if len(key) > 1:
                     newkey = 'S'
-                    while newkey not in list(grammar.keys()):
+                    while newkey in list(grammar.keys()):
                         newkey = chr(random.randint(65, 90))
+                    for i in list(grammar.keys()):
+                        for j in grammar[i]:
+                            if j[1:] == key:
+                                grammar[i] = []
+                                grammar[i].append(j[0] + newkey)
                     grammar[newkey] = grammar.pop(key)
             if 'X' in grammar:
                 del grammar['X']
+            self.Vn = list(grammar.keys())
             return grammar
 
         for key in keys:
@@ -81,7 +98,6 @@ class Grammar:
                         for char in production[1:]:
                             if char in self.Vn:
                                 table1[key][terminal].append(char)
-
         table1 = transform_dict(table1)
         table2 = {self.S: table1[self.S]}
         check = False
@@ -116,7 +132,7 @@ class Grammar:
         print("NFA grammer")
         print(self.P)
         print("DFA grammer")
-        print(dict_to_grammar(table2))
+        dict_to_grammar(table2)
         return dict_to_grammar(table2)
 
     def generate_strings(self):
@@ -180,6 +196,8 @@ if __name__ == "__main__":
         'C': ['a', 'bS'],
     }
     s = 'S'
+
+
     grammar = Grammar(vn, vt, p, s)
     generated_words = grammar.generate_strings()
     print("\nGenerated strings using the grammar:")

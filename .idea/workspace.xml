@@ -5,9 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6f3411eb-4a48-468f-9648-a5998f5673fa" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LAB1/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/LAB1/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LAB1/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/LAB1/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LAB1/test2.py" beforeDir="false" afterPath="$PROJECT_DIR$/LAB1/test2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LAB2/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LAB2/Report_Lab1_BostanVictor.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LAB2/Report_Lab2_BostanVictor.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LAB2/lab1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LAB2/lab2.py" beforeDir="false" afterPath="$PROJECT_DIR$/LAB2/lab2.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,7 +29,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/LAB2" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -32,13 +39,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Eugen Ostafi/Desktop/LFA&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/Eugen Ostafi/Desktop/LFA"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
