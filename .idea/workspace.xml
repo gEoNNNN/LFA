@@ -5,11 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6f3411eb-4a48-468f-9648-a5998f5673fa" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab 2/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LAB2" beforeDir="false" afterPath="$PROJECT_DIR$/LAB2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LAB2/FA.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LAB2/Gramm.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LAB2/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/LAB2/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LAB2 - Copy" beforeDir="false" afterPath="$PROJECT_DIR$/LAB2 - Copy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LAB2 - Copy/FA.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LAB2 - Copy/Gramm.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LAB2 - Copy/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/LAB2 - Copy/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,7 +25,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/LAB2" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -38,7 +39,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/Eugen Ostafi/Desktop/vaa"
+    "last_opened_file_path": "C:/Users/Eugen Ostafi/Desktop/LFA"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
